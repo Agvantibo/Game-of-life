@@ -1,0 +1,7 @@
+height=9
+speed=0
+dead=_
+live=#
+write coordinates (row, column) after this line. Do NOT delete the last empty string!
+1 3
+2 6
