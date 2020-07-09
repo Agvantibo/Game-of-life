@@ -37,9 +37,9 @@ console = False
 if filename == '_':
     print('Full console mode on!')
     console = True
-print('Loading...')
-print('[▓▓▓', end='')
 if not console:
+    print('Loading...')
+    print('[▓▓▓', end='')
     try:
         INPUT = open(filename, 'r')
     except FileNotFoundError:
@@ -92,7 +92,6 @@ if not console:
     print('▓▓▓]')
     print('LOADED SUCCESSFULLY!')
 else:
-    print('▓▓▓▓▓▓▓▓▓▓▓]')
     code = []
     print('''Enter one by one:
     size of the field (int)
