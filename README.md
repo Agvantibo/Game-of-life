@@ -11,6 +11,7 @@ Gearbox is a custom offline-only package designed to simplify the main code and 
 Playsound and colorama, on the other hand, are listed in PyPi and are PIP-installable through their corresponding commands.
 Also you should use a Python 3 interpreter to run this, Python 2 won't do the trick...
 ### Part 2 - Usage
-The game is started by executing main.py. It could be done with a Python executable, through CMD or using an IDE. For Best results use an IDE or Python.exe
+The game is started by executing main.py. It could be done with a Python executable, through CMD or using an IDE. For Best results use an IDE or Python.exe.
+If you are using REPL.IT, please set lang in the .replit to python3 and run to main.py, then delete the file.
 Once started it will produce accurate instructions on what to do.
 Happy using!
