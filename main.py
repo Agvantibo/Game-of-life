@@ -1,17 +1,14 @@
 try:
+    from os import system
     import gearbox as g
     from sys import exit
     from time import sleep
     from playsound import playsound
     from colorama import init
 except ImportError:
-    print('\033[1;31;49mWarning! Some packages required for the project to work are not installed!\u001b[0m')
-    print('''Here are all required packages:
-    gearbox
-    playsound
-    colorama''')
+    system('python -m pip install colorama playsound')
     sleep(2)
-    exit("Goodbye!")
+    
 init()
 print('''\033[1;33;49m                                        
      ____
