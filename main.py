@@ -5,8 +5,8 @@ try:
     from playsound import playsound
     from colorama import init
 except ImportError:
-    print('\033[1;31;49mWarning! Some packages required for the project to work are not installed!\033[1;30;49m')
-    print('''Here are all required packages packages:
+    print('\033[1;31;49mWarning! Some packages required for the project to work are not installed!\u001b[0m')
+    print('''Here are all required packages:
     gearbox
     playsound
     colorama''')
@@ -28,7 +28,7 @@ print('''\033[1;33;49m
 ((___/ / //            // / /   //   ((____     ''')
 print()
 print('''\033[1;34;49mType the name of the input file and press enter,
-or press _ and enter for full console mode\033[1;30;49m''')
+or press _ and enter for full console mode\u001b[0m''')
 filename = input()
 if filename == '':
     filename = 'INPUT'
