@@ -172,7 +172,7 @@ while True:
             sleep(0.5)
             exit('Goodbye')
         elif ask == 'S':
-            with open('assets\SCREENSHOTS', 'a') as f:
+            with open('SCREENSHOTS', 'a') as f:
                 for i in field.array:
                     appender = '  '.join(i)
                     f.write(appender)
