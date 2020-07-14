@@ -20,7 +20,7 @@ First, check INPUT. This file is an unextended text file, and could be opened wi
 **dead and live** - symbols for dead and live cells.
 
 ###### **IMPORTANT NOTICE**
-Due to the way read and write in python work extended ascii table characters entered through file will read incorrectly.
+Due to the way `read()` and `write()` in python work extended ascii table characters entered through file will read incorrectly.
 If you want to use these characters, use *console mode*.
 Screenshot functionality will be unavailable though...
 
