@@ -38,4 +38,4 @@ Besides supporting two input modes and a fancy colorful startup screen this game
 - planned(GUI)
 
 
-[click for more info on game of life](https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%AB%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%C2%BB)
+[click for more info on game of life](https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%ABhttps://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
