@@ -1,6 +1,6 @@
 ![](https://i.ibb.co/ByyNRk9/Untitled.png)
 
-[![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
+![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
 # 🕹️ Dmitriy's game of life - manual 🕹️
 ### Part 1 - Getting ready
 For this game to work you should install these packages:
@@ -36,3 +36,6 @@ Besides supporting two input modes and a fancy colorful startup screen this game
 - hackability
 - i/o customization
 - planned(GUI)
+
+
+[click for more info on game of life](https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%AB%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%C2%BB)
