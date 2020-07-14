@@ -1,6 +1,6 @@
 ![](https://i.ibb.co/ByyNRk9/Untitled.png)
 
-![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
+[![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
 # 🕹️ Dmitriy's game of life - manual 🕹️
 ### Part 1 - Getting ready
 For this game to work you should install these packages:
