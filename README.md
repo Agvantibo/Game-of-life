@@ -7,7 +7,10 @@ For this game to work you should install these packages:
     - gearbox
     - playsound
     - colorama
-Gearbox is a custom offline-only package designed to simplify the main code and collect all the tools in one place. If you haven't got it - reclone or update this project...
+
+Gearbox is a custom offline-only package designed to simplify the main code and collect all the tools in one place. 
+If you haven't got it - reclone or update this project...
+
 Playsound and colorama, on the other hand, are autoinstalled on the first run, so no need to worry.
 Also you should use a Python 3 interpreter to run this, Python 2 won't do the trick...
 ### Part 2 - Usage
