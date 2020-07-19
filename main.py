@@ -1,27 +1,30 @@
 try:
     from os import system
+    from os import name
     import gearbox as g
     from sys import exit
     from time import sleep
     from playsound import playsound
     from colorama import init
 except ImportError:
+    g.print_red('Warning! packages not found! Autoinstalling playsound, colorama')
     system('python -m pip install colorama playsound')
-    sleep(2)
-    
+    from playsound import playsound
+    from colorama import init
+
 init()
-print('''\033[1;33;49m                                        
+print('''\033[1;33;49m
      ____
-    //   ) )                                    
-   //         ___      _   __      ___          
-  //  ____  //   ) ) // ) )  ) ) //___) )       
- //    / / //   / / // / /  / / //              
-((____/ / ((___( ( // / /  / / ((____           
+    //   ) )
+   //         ___      _   __      ___
+  //  ____  //   ) ) // ) )  ) ) //___) )
+ //    / / //   / / // / /  / / //
+((____/ / ((___( ( // / /  / / ((____
               ___                    ___
-             //  ) )       _        //  ) )     
-    ___   __//__          // ( ) __//__  ___    
-  //   ) ) //            // / /   //   //___) ) 
- //   / / //            // / /   //   //        
+             //  ) )       _        //  ) )
+    ___   __//__          // ( ) __//__  ___
+  //   ) ) //            // / /   //   //___) )
+ //   / / //            // / /   //   //
 ((___/ / //            // / /   //   ((____     ''')
 print()
 print('''\033[1;34;49mType the name of the input file and press enter,
@@ -34,13 +37,17 @@ console = False
 if filename == '_':
     print('Full console mode on!')
     console = True
+mute = True
+if name == 'nt':
+    mute = False
 if not console:
     print('Loading...')
     print('[▓▓▓', end='')
     try:
         INPUT = open(filename, 'r')
     except FileNotFoundError:
-        playsound("assets\Error_buzz.mp3")
+        if not mute:
+            playsound("assets\Error_buzz.mp3")
         g.print_red('Input file listed does not exist.')
         sleep(2)
         exit()
@@ -61,12 +68,14 @@ if not console:
         code.pop(0)
         code.pop(0)
     except ValueError:
-        playsound('assets\Error_buzz.mp3')
+        if not mute:
+            playsound('assets\Error_buzz.mp3')
         print('Invalid input value, check the INPUT file')
         sleep(2)
         exit()
     except IndexError:
-        playsound('assets\Error_buzz.mp3')
+        if not mute:
+            playsound('assets\Error_buzz.mp3')
         print('Invalid input value, check the INPUT file')
         sleep(2)
         exit()
@@ -80,7 +89,8 @@ if not console:
             x, y = [int(i) for i in i.split()]
             to_do.append(g.coordinate(x, y))
         except ValueError:
-            playsound('assets\Error_buzz.mp3')
+            if not mute:
+                playsound('assets\Error_buzz.mp3')
             print('Invalid coordinate values')
             sleep(2)
             exit()
@@ -101,7 +111,8 @@ else:
         height = int(input())
         speed = int(input())
     except ValueError:
-        playsound('assets\Error_buzz.mp3')
+        if not mute:
+            playsound('assets\Error_buzz.mp3')
         print('Invalid input value')
         sleep(2)
         exit()
@@ -116,7 +127,8 @@ else:
             x, y = [int(i) for i in _input.split()]
             to_do.append(g.coordinate(x, y))
         except ValueError:
-            playsound('assets\Error_buzz.mp3')
+            if not mute:
+                playsound('assets\Error_buzz.mp3')
             print('Invalid coordinate values')
             sleep(2)
             exit()
@@ -135,7 +147,8 @@ while True:
         sleep(0.5)
         exit('Goodbye!')
     else:
-        playsound('assets\Error_buzz.mp3')
+        if not mute:
+            playsound('assets\Error_buzz.mp3')
         print('Invalid input value, check the INPUT file')
         sleep(2)
         exit()
@@ -205,7 +218,8 @@ while True:
     field.print('  ')
     print(iterator)
     if field_tmp == field.array:
-        playsound('assets\hfail sad trumpet trombone sound.mp3')
+        if not mute:
+            playsound('assets\hfail sad trumpet trombone sound.mp3')
         g.print_red('GAME OVER')
         print('''\033[1;32;49mStable configuration reached or all cells died.
 To exit type exit and press enter. To continue press enter\033[1;30;49m''')
