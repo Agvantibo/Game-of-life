@@ -5,6 +5,7 @@
 ### Part 1 - Getting ready
 This app is designed for Windows. It will not run on Mac, and may be unstable on linux. If you encounter any problems please report them.
 For this game to work you should install these packages:
+
     - gearbox
     - playsound
     - colorama
@@ -39,7 +40,9 @@ Besides supporting two input modes and a fancy colorful startup screen this game
 - Screenshots [speed=0, s on execution]
 - hackability
 - i/o customization
-- planned(GUI)
+- user-friendly interface and a ton of automation to help people with requirements and restrictions
+- sounds (not working on linux)
+- planned GUI
 
 
 [click for more info on game of life](https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%ABhttps://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
