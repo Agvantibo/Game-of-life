@@ -3,6 +3,7 @@
 [![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
 # 🕹️ Dmitriy's game of life - manual
 ### Part 1 - Getting ready
+This app is designed for Windows. It will not run on Mac, and may be unstable on linux. If you encounter any problems please report them.
 For this game to work you should install these packages:
     - gearbox
     - playsound
