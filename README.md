@@ -1,6 +1,8 @@
 ![](https://i.ibb.co/ByyNRk9/Untitled.png)
 
 [![Run on Repl.it](https://repl.it/badge/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)](https://repl.it/github/Friendly-collab-AgvantiboXGeorgetv4/Game-of-life)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/PyTeam2020/Game-of-life/blob/master/LICENSE)
+
 # 🕹️ Dmitriy's game of life - manual
 ### Part 1 - Getting ready
 This app is designed for Windows. It will not run on Mac, and may be unstable on linux. If you encounter any problems please report them.
