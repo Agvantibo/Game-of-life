@@ -1,4 +1,4 @@
-def create2DArray(material, length):
+def create_2d_array(material, length):
     array = []
     for i in range(length):
         array.append([material] * length)
@@ -11,7 +11,7 @@ def print_red(val):
     print("\033[1;30;49m", end='')
 
 
-class dim_list:
+class Smartlist:
     def __init__(self, array):
         self.array = array
 
@@ -49,28 +49,21 @@ class dim_list:
         self.array.append([])
 
 
-def Get_Diagonal_Left(length):
-    output_Array = []
-    for y in range(length + 1):
-        output_Array.append(coordinate(y - 1, y - 1))
-    return output_Array
-
-
-def print2DArray(array, end):
+def print_2d_array(array, end):
     for i in array:
         for j in i:
             print(j, end=end)
         print()
 
 
-class coordinate:
+class Coordinate:
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
 
-def GetNeighborIndices(row, col):
-    answer = [coordinate(row + 1, col), coordinate(row - 1, col), coordinate(row, col + 1), coordinate(row, col - 1),
-              coordinate(row + 1, col + 1), coordinate(row + 1, col - 1), coordinate(row - 1, col + 1),
-              coordinate(row - 1, col - 1), ]
+def get_neighbor_indices(row, col):
+    answer = [Coordinate(row + 1, col), Coordinate(row - 1, col), Coordinate(row, col + 1), Coordinate(row, col - 1),
+              Coordinate(row + 1, col + 1), Coordinate(row + 1, col - 1), Coordinate(row - 1, col + 1),
+              Coordinate(row - 1, col - 1), ]
     return answer
